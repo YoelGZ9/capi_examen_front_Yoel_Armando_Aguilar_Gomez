@@ -1,0 +1,21 @@
+<section>
+
+    <div class="d-flex justify-content-between">
+      <h4>Lista Usuarios</h4>
+    </div>
+
+    <br>
+    <table class="table ">
+      <tr>
+        <th>Nombre de Usuario</th>
+        <th>Fecha Nacimiento</th>
+        <th>Direccion</th>
+      </tr>
+      <tr *ngFor="let usuarios of usariosm">
+        <td>{{ usuarios.name }}</td>
+        <td>{{ usuarios.fecha_nacimiento }}</td>
+        <td>{{ usuarios.domicilio+" "+usuarios.numero_exterior +" "+usuarios.colonia+" "+usuarios.cp+" "+usuarios.ciudad}}</td>
+      </tr>
+    </table>
+ </section>
+
